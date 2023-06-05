@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tarefa 3. Divisor de Conta de Restaurante</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Divisor de Conta de Restaurante</h1>
+<div id="app">
+    <div>
+        <h2>Produtos do Restaurante</h2>
+        <input type="text" id="produto" placeholder="Nome do Produto">
+        <input type="number" id="preco" placeholder="Preço do Produto">
+        <button onclick="adicionarProduto()">Adicionar Produto</button>
+        <ul id="lista-produtos"></ul>
+    </div>
+    <div>
+        <h2>Clientes do Restaurante</h2>
+        <input type="text" id="cliente" placeholder="Nome do Cliente">
+        <button onclick="adicionarCliente()">Adicionar Cliente</button>
+        <ul id="lista-clientes"></ul>
+    </div>
+    <div>
+        <h2>Consumo dos Clientes do Restaurante</h2>
+        <select id="cliente-consumo"></select>
+        <select id="produto-consumo"></select>
+        <button onclick="adicionarConsumo()">Adicionar Consumo dos Clientes</button>
+    </div>
+    <div>
+        <h2>Conta do Restaurante</h2>
+        <button onclick="calcularConta()">Calcular Conta</button>
+        <ul id="resultado"></ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
